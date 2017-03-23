@@ -8,7 +8,7 @@
 
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-		<class>bbr.com.vinicius.jpa.modelo.Patente</class>
+		<class>br.com.vinicius.jpa.modelo.Patente</class>
 		
 
 		<properties>
