@@ -29,7 +29,7 @@ public class AgregadoTest extends BaseTest{
 		List<Agregado> lista = query.getResultList();
 		assertFalse("verifica se há registros na lista", lista.isEmpty());
 		lista.forEach(agreagado->{
-            assertNull("verifica que o cpf deve estar null", agreagado.getParentesco());
+            assertNull("verifica que o nome deve estar null", agreagado.getParentesco());
 			agreagado.setParentesco(filter);
 		});
 		
