@@ -9,6 +9,8 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 		<class>br.com.vinicius.jpa.modelo.Patente</class>
+		<class>br.com.vinicius.jpa.modelo.Agregado</class>
+		<class>br.com.vinicius.jpa.modelo.Pessoa</class>
 		
 
 		<properties>
