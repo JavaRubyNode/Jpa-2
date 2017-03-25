@@ -1,5 +1,7 @@
 package br.com.vinicius.jpa.modelo;
 
+import java.util.List;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,6 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -25,6 +28,10 @@ public class Agregado extends BaseEntity<Long>{
 	@Column(name="grau_parentesco",nullable=false,length=20)
 	@Basic(fetch=FetchType.LAZY)
 	private String parentesco;
+	
+	
+	@OneToMany(mappedBy="agregado", fetch = FetchType.LAZY)
+	private List<Beneficiario> beneficiarios;
 	
 	
 	@Override
